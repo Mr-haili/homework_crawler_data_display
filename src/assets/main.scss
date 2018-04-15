@@ -1,0 +1,82 @@
+$red: #f20000;
+$red-light: rgba(242, 0, 0, .8);
+$black-lightest: rgba(0, 0, 0, .15);
+$black-light: rgba(0, 0, 0, .3);
+$black-grey: rgba(0, 0, 0, .5);
+$black: rgba(0, 0, 0, .7);
+$black-heavy: rgba(0,0,0,.9);
+$base-back-color: white;
+$color-page-cover: rgba(0, 0, 0, .5);
+
+.font-sm {
+	font-size: 12px;
+}
+
+.top-layer{
+	z-index: 666;
+}
+
+.wrapper{
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+}
+
+/* 输入框基础样式 */
+input{
+	border-radius: 0;
+}
+
+/* input place holder font color */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: $black-light;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: $black-light;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: $black-light;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: $black-light;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: $black-light;
+}
+
+.full-screen {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 6666;
+}
+
+ul {
+	display: block;
+	list-style-type: none;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+
+/* 用于文本省略 */
+.text-ellipsis {
+	display: -webkit-box !important;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	text-align: left !important;
+	overflow: hidden;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
